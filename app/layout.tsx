@@ -1,5 +1,6 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
+import { LuCrown } from 'react-icons/lu';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,11 +17,19 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <nav>
-          <a href="/">home</a>
-          <a href="/">about</a>
+        <nav className='navegation'>
+          <a href="/">Home</a>
+          <LuCrown className='firsticon'/>
+          <a href="/about">About</a>
         </nav>
         {children}
+        <footer className="footer">
+          {/* <LuCrown/> */}
+          <LuCrown className='firsticon'/>
+          <a href="/about">Contato</a>
+          {/* <LuCrown/> */}
+          <LuCrown className='firsticon'/>
+        </footer>
       </body>
     </html>
   )

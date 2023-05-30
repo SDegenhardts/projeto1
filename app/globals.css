@@ -2,6 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
+.navegation {
+  display: flex;
+  justify-content: space-evenly; 
+  background-color: violet;
+  font-size: 2.5em;
+  padding: 1%;
+  gap: 6em;
+  align-items: center;
+}
+
+.firsticon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
 body {
-  background-color: aqua;
+  background-color: rgb(255, 255, 255); 
+  
+}
+.footer{
+  width: 100vw;
+  background-color: violet;
+  display: flex;
+  justify-content: center;
+  position: end;
+  align-items: center;
+  height: 2.5vw;
+  gap: 1em;
 }
