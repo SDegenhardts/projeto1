@@ -13,12 +13,12 @@ export default function Home() {
         <h1>
         <TypeAnimation
       sequence={[
-        'Ganhe', 
-        2000, 
-        'Venda', 
-        2000, 
-        'Compre', 
-        2000,
+        'Utiliser', 
+        1700, 
+        'Contempler', 
+        2700, 
+        "C'est", 
+        3100,
         () => {
           console.log('Sequence completed'); // Place optional callbacks anywhere in the array
         }
@@ -29,7 +29,7 @@ export default function Home() {
       style={{ fontSize: '2em', display: 'inline-block' }}
     />
           <Efeitodeescrita
-          text={'Lesticia'}
+          text={'Femur Magna'}
           />
         </h1>
       </div>

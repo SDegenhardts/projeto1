@@ -5,11 +5,13 @@
 .navegation {
   display: flex;
   justify-content: space-evenly; 
-  background-color: violet;
+  background-color: rgba(255, 110, 255, 0.397);
   font-size: 2.5em;
   padding: 1%;
   gap: 6em;
   align-items: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
 }
 
 .firsticon {
@@ -26,11 +28,14 @@ body {
 }
 .footer{
   width: 100vw;
-  background-color: violet;
+  background-color: rgba(255, 110, 255, 0.610);
   display: flex;
   justify-content: center;
   position: end;
   align-items: center;
   height: 2.5vw;
   gap: 1em;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
 }
+
