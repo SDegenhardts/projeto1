@@ -5,6 +5,9 @@ import { Efeitodeescrita } from "../components/efeitodeescrita"
 import { TypeAnimation } from 'react-type-animation';
 
 export default function Home() {
+
+
+
   return (
     <section>
       <div className={style.content}>

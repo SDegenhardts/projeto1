@@ -23,4 +23,11 @@
     margin: 0%;
     justify-content: center;
     margin-top: 6%;
+    
 }
+
+.imagens:hover{
+    transition: 0.5s;
+   filter: blur(10px);
+}
+
