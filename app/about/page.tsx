@@ -3,10 +3,11 @@
 import style from '../../app/about.module.css'
 import { Efeitodeescrita } from "../components/efeitodeescrita"
 import { TypeAnimation } from 'react-type-animation';
+import { useState } from 'react';
 
 export default function Home() {
 
-
+  const [text, setText]= useState("")
 
   return (
     <section>
@@ -34,12 +35,21 @@ export default function Home() {
         </h2>
 
         <div className={style.imagens}>
-        
-        <img src="perfume1.jpg"/>
 
-        <img src="perfume2.jpg"/>
+        <div className={style.perfume1}>
+        <img onMouseEnter={() => setText("nome  perfume")} onMouseEnter={() => setText("nome  perfume")} className={style.imagensepa} src="perfume1.jpg"/>
+          {text}
+        </div>
 
-        <img src="perfume3.jpg"/>
+        <div className={style.perfume2}>
+        <img onMouseEnter={() => setText("nome  perfume")} className={style.imagensepa} src="perfume2.jpg"/>
+          {text}
+        </div>
+
+        <div className={style.perfume3}>
+        <img onMouseEnter={() => setText("nome  perfume")} className={style.imagensepa} src="perfume3.jpg"/>
+          {text}
+        </div>
         
       </div>
       </div>

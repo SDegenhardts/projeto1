@@ -26,8 +26,44 @@
     
 }
 
-.imagens:hover{
+/* .imagens:hover{
     transition: 0.5s;
    filter: blur(10px);
+} */
+
+.imagensepa:hover{
+    transition: 0.5s;
+    filter: blur(3px);
 }
 
+/* .perfume1 {
+    display: flex;
+    gap: 2.8em;
+    width: 25%;
+    height: 500px;
+    margin: 0%;
+    justify-content: center;
+    margin-top: 6%;
+    
+}
+
+.perfume2 {
+    display: flex;
+    gap: 2.8em;
+    width: 25%;
+    height: 500px;
+    margin: 0%;
+    justify-content: center;
+    margin-top: 6%;
+    
+}
+.perfume3 {
+    display: flex;
+    gap: 2.8em;
+    width: 25%;
+    height: 500px;
+    margin: 0%;
+    justify-content: center;
+    margin-top: 6%;
+    
+} */

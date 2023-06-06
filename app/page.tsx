@@ -20,7 +20,7 @@ export default function Home() {
         "C'est", 
         3100,
         () => {
-          console.log('Sequence completed'); // Place optional callbacks anywhere in the array
+          console.log('Sequence completed');
         }
       ]}
       wrapper="span"
