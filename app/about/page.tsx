@@ -8,6 +8,8 @@ import { useState } from 'react';
 export default function Home() {
 
   const [text, setText]= useState("")
+  const [textl, setTextl]= useState("")
+  const [textll, setTextll]= useState("")
 
   return (
     <section>
@@ -36,19 +38,16 @@ export default function Home() {
 
         <div className={style.imagens}>
 
-        <div className={style.perfume1}>
-        <img onMouseEnter={() => setText("nome  perfume")} onMouseEnter={() => setText("nome  perfume")} className={style.imagensepa} src="perfume1.jpg"/>
-          {text}
+        <div onMouseEnter={() => setText("Idealização")} className={style.perfume1} onMouseLeave={() => setText("")}>
+          <div className={style.frase1}>{text}</div>
         </div>
 
-        <div className={style.perfume2}>
-        <img onMouseEnter={() => setText("nome  perfume")} className={style.imagensepa} src="perfume2.jpg"/>
-          {text}
+        <div onMouseEnter={() => setTextl("Produção")} className={style.perfume2} onMouseLeave={() => setTextl("")}>
+          <div className={style.frase2}>{textl}</div>
         </div>
 
-        <div className={style.perfume3}>
-        <img onMouseEnter={() => setText("nome  perfume")} className={style.imagensepa} src="perfume3.jpg"/>
-          {text}
+        <div onMouseEnter={() => setTextll("Conclusão")} className={style.perfume3} onMouseLeave={() => setTextll("")}>
+          <div className={style.frase3}>{textll}</div>
         </div>
         
       </div>
