@@ -1,37 +1,23 @@
-'use client'
-
-// import React, { useState } from 'react';
-// import { useServerInsertedHTML } from 'next/navigation';
-// import { ServerStyleSheet, StyleSheetManager } from 'styled-components';
+// 'use client'
  
-// export default function StyledComponentsRegistry({
+// import React, { useState } from 'react'
+// import { useServerInsertedHTML } from 'next/navigation'
+// import { StyleRegistry, createStyleRegistry } from 'styled-jsx'
+ 
+// export default function StyledJsxRegistry({
 //   children,
 // }: {
-//   children: React.ReactNode;
+//   children: React.ReactNode
 // }) {
-//   const [styledComponentsStyleSheet] = useState(() => new ServerStyleSheet());
+//   // Only create stylesheet once with lazy initial state
+//   // x-ref: https://reactjs.org/docs/hooks-reference.html#lazy-initial-state
+//   const [jsxStyleRegistry] = useState(() => createStyleRegistry())
  
 //   useServerInsertedHTML(() => {
-//     const styles = styledComponentsStyleSheet.getStyleElement();
-//     styledComponentsStyleSheet.instance.clearTag();
-//     return <>{styles}</>;
-//   });
+//     const styles = jsxStyleRegistry.styles()
+//     jsxStyleRegistry.flush()
+//     return <>{styles}</>
+//   })
  
-//   if (typeof window !== 'undefined') return <>{children}</>;
- 
-//   return (
-//     <StyleSheetManager sheet={styledComponentsStyleSheet.instance}>
-//       {children}
-//     </StyleSheetManager>
-//   );
-// }
-
-// export default function Conjima(){
-//     return(
-//         <section>
-//             <div><img src="perfume1.jpg"/></div>
-//             <div><img src="perfume2.jpg"/></div>
-//             <div><img src="perfume3.jpg"/></div>
-//         </section>
-//     )
+//   return <StyleRegistry registry={jsxStyleRegistry}>{children}</StyleRegistry>
 // }
